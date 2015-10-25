@@ -13,12 +13,13 @@ If not yet installed R package reshape2 and its dependencies should be installed
 The following read.table functions will save the datafiles as local R objects (testsub, Xtest.. etc).
 File paths are specified because files are contained in the subdirectories "test" and "train" within current
 working directory ("UCI HAR Dataset").
-testsub <- read.table(file=file.path("test", "subject_test.txt"))
-Xtest <- read.table(file=file.path("test", "X_test.txt"))
-Ytest <- read.table(file=file.path("test", "y_test.txt"))
-trainsub <- read.table(file=file.path("train", "subject_train.txt"))
-Xtrain <- read.table(file=file.path("train", "X_train.txt"))
-Ytrain <- read.table(file=file.path("train", "y_train.txt"))
+
+	testsub <- read.table(file=file.path("test", "subject_test.txt"))
+	Xtest <- read.table(file=file.path("test", "X_test.txt"))
+	Ytest <- read.table(file=file.path("test", "y_test.txt"))
+	trainsub <- read.table(file=file.path("train", "subject_train.txt"))
+	Xtrain <- read.table(file=file.path("train", "X_train.txt"))
+	Ytrain <- read.table(file=file.path("train", "y_train.txt"))
 
 
 To merge all of the datasets, first a dataset 'test' will be created by column binding of Xtest, testsub and Ytest.
